@@ -5,6 +5,10 @@ import printMe from './print.js';
 
 import {cube} from "./math";
 
+if(process.env.NODE_ENV!=='production'){
+  console.log('Look like we are in development model');
+}
+
 function component() {
   // let element = document.createElement('div');
   let element = document.createElement('pre');
