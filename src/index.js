@@ -5,8 +5,9 @@
  */
 // import _ from 'lodash';
 import './style.css';
-// import Dog from './dog.png';
+import Dog from './assets/dog.png';
 import printMe from './print.js';
+
 
 import {cube} from './math';
 
@@ -18,7 +19,6 @@ function component() {
 // let element = document.createElement('div');
     let element = document.createElement('pre');
     let btn = document.createElement('button');
-
     // Lodash，现在由此脚本导入
     // element.innerHTML = _.join(['Hello', 'webpack'], ' ');
     // element.classList.add('hello');
@@ -31,9 +31,11 @@ function component() {
 
 
     // 将图像添加到我们现有的 div。
-    // let myDog = new Image();//注意是new的是Image
-    // myDog.src = Dog;
-    // element.appendChild(myDog);
+    let myDog = new Image();//注意是new的是Image
+    myDog.src = Dog;
+    myDog.width = 200;
+    myDog.height = 200;
+    element.appendChild(myDog);
 
     btn.innerHTML = 'Click me and console';
     btn.onclick = printMe;
