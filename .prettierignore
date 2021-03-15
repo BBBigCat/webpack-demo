@@ -1,0 +1,10 @@
+lib
+node_modules
+scripts
+package.json
+build
+
+**/*.svg
+**/*.ejs
+**/*.md
+
